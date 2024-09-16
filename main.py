@@ -14,8 +14,13 @@ def email_text():
 
 def main():
     email = email_text()
-    print(email)
-    print(process_email(email))
+    print(f"Текст письма: {email}")
+    indexes = process_email(email)
+    print(f"Индексы: {indexes}")
+    features = email_features(indexes)
+    print(f"Размер вектора признаков: {len(features)}")
+    print(f"Размер не нулевых признаков: {sum(features > 0)}")
+
 
 if __name__ == '__main__':
     main()
