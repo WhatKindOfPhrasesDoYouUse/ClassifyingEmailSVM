@@ -15,6 +15,7 @@ def email_text():
 def main():
     email = email_text()
     print(email)
+    print(process_email(email))
 
 if __name__ == '__main__':
     main()

@@ -68,6 +68,11 @@ def process_email(email):
         # a = [1, 2, 3]
         # a.append(4)   # => [1, 2, 3, 4]
 
+        index = np.where(vocabList == str)[0]
+
+        if len(index) > 0:
+            word_indices.append(index[0])
+
     return word_indices
 
 
