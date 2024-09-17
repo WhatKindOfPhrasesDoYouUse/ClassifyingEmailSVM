@@ -64,7 +64,5 @@ def main():
     top_spam_words(model1)
     top_spam_words(model2)
 
-
-
 if __name__ == '__main__':
     main()
